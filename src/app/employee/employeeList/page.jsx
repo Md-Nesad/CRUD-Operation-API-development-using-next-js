@@ -9,7 +9,7 @@ const EmployeeList = () => {
   const getAllEmployee = async () => {
     // Fetch data from api
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_API_BASE_URL}//api/employee`,
+      `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/employee`,
       {
         method: "GET",
       }
