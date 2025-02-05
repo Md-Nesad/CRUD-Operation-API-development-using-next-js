@@ -9,7 +9,7 @@ const EmployeeList = () => {
   const getAllEmployee = async () => {
     // Fetch data from api
     const res = await fetch(
-      `https://crud-operation-api-development-using-next-js.vercel.app/api/employee`,
+      `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/employee`,
       {
         method: "GET",
       }
@@ -25,7 +25,7 @@ const EmployeeList = () => {
   //delete employee function
   const deleteEmployee = async (_id) => {
     const res = await fetch(
-      `https://crud-operation-api-development-using-next-js.vercel.app/api/employee/${_id}`,
+      `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/employee/${_id}`,
       {
         method: "DELETE",
       }

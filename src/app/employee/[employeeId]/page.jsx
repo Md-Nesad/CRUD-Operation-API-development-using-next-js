@@ -23,7 +23,7 @@ const EditEmployee = () => {
   // Create Get Employee By Id Function
   const getEmployeeById = async () => {
     const res = await fetch(
-      `https://crud-operation-api-development-using-next-js.vercel.app/api/employee/${employeeId}`,
+      `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/employee/${employeeId}`,
       {
         method: "GET",
       }
@@ -45,7 +45,7 @@ const EditEmployee = () => {
   // Create Update Employee Function
   const updateEmployee = async () => {
     const res = await fetch(
-      `https://crud-operation-api-development-using-next-js.vercel.app/api/employee/${employeeId}`,
+      `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/employee/${employeeId}`,
       {
         method: "PUT",
         headers: {
