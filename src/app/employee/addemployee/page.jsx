@@ -15,7 +15,7 @@ const AddEmployee = () => {
   // Create Add Employee Detail Function
   const addEmployeeDetail = async () => {
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/employee`,
+      `https://crud-operation-api-development-using-next-js.vercel.app/api/employee`,
       {
         method: "POST",
         headers: {
